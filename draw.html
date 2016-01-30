@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>画图工具</title>
+    <link rel="stylesheet" type="text/css" href="canvas2.css">
+    <script src="js/jQuery.js"></script>
+    <script src="shape.js"></script>
+    <script src="canvas.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <li class="parent hasson">
+            <div>文件</div>
+            <ul class="son file">
+                <button>新建文档</button>
+                <button>后退一步</button>
+                <button>保存图片</button>
+            </ul>
+        </li>
+        <li class="parent">
+            <div class="select">选择</div>
+        </li>
+        <li class="parent hasson">
+            <div>工具</div>
+            <ul class="son">
+                <li>铅笔</li>
+                <li class="youqi">油漆桶</li>
+                <li>文本</li>
+                <li class="xiangpi">橡皮</li>
+                <li>吸取器</li>
+                <li>放大镜</li>
+            </ul>
+        </li>
+        <li class="parent hasson">
+            <div>形状</div>
+            <ul class="son er">
+                <li data-role="line">线</li>
+                <li data-role="rect">矩形</li>
+                <li data-role="arc">圆</li>
+                <li data-role="five">五角星</li>
+            </ul>
+        </li>
+        <li class="parent hasson">
+            <div>绘图方式</div>
+            <ul class="son san">
+                <li type="stroke">轮廓</li>
+                <li type="fill">填充</li>
+            </ul>
+        </li>
+        <li class="parent hasson">
+            <div>线条粗细</div>
+            <ul class="son si">
+                <li num="1">细</li>
+                <li num="2">正常</li>
+                <li num="10">粗</li>
+                <!--<li>自定义</li>-->
+            </ul>
+        </li>
+        <li class="parent hasson">
+            <div>编辑颜色</div>
+            <ul class="son color wu">
+                <li id="red"></li>
+                <li id="green"></li>
+                <li id="blue"></li>
+                <li id="yellow"></li>
+                <li id="white"></li>
+                <li id="black"></li>
+                <li id="pink"></li>
+                <li id="purple"></li>
+                <li id="cyan"></li>
+                <li id="orange"></li>
+                <span>更多色彩</span>：<input type="color">
+            </ul>
+        </li>
+        <div class="box">
+            <div class="copy"></div>
+            <canvas></canvas>
+            <div class="xp"></div>
+            <div class="selectarea"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
